@@ -52,14 +52,14 @@ export default class Login extends Component {
         <div className="login" data-testid="page-login">
 
           <span className="logo-image">
-            <img className="logotunes" src={ logoTunes } alt="Logo da TrybeTunes" />
+            <img className="logotunes" src={logoTunes} alt="Logo da TrybeTunes" />
 
             <img
-              alt={ `Foto do perfil de  ${name}` }
+              alt={`Foto do perfil de  ${name}`}
               data-testid="login-image-input"
               className="image-login"
-              onChange={ this.handleFillForm }
-              src={ image || imgDefault }
+              onChange={this.handleFillForm}
+              src={image || imgDefault}
               width="100px"
             />
 
@@ -72,7 +72,7 @@ export default class Login extends Component {
               placeholder="Digite seu Nome"
               data-testid="login-name-input"
               type="text"
-              onChange={ this.handleFillForm }
+              onChange={this.handleFillForm}
             />
 
             <input
@@ -81,14 +81,15 @@ export default class Login extends Component {
               data-testid="login-email-input"
               type="email"
               className="email-login"
-              onChange={ this.handleFillForm }
+              onChange={this.handleFillForm}
             />
 
             <input
-              value={ image }
+              value={image}
               name="image"
+              placeholder="Digite ou Cole seu URL da foto aqui"
               type="text"
-              onChange={ this.handleFillForm }
+              onChange={this.handleFillForm}
             />
 
             <textarea
@@ -97,15 +98,15 @@ export default class Login extends Component {
               data-testid="login-description-input"
               className="description-login"
               maxLength="300"
-              onChange={ this.handleFillForm }
+              onChange={this.handleFillForm}
             />
 
             <button
               data-testid="login-submit-button"
-              disabled={ isDisabled }
+              disabled={isDisabled}
               className="button-login"
               type="button"
-              onClick={ this.handleClickSubmitUser }
+              onClick={this.handleClickSubmitUser}
             >
               Entrar
             </button>
