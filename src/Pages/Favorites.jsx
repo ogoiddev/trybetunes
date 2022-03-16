@@ -36,11 +36,11 @@ export default class Favorites extends Component {
             <section className="favorites-content">
               <div className="favorites-albums-image">
                 {
-                  [...Array(times)].map((x) => favoriteSongs.map((track) => (
+                  [...Array(times)].map(() => favoriteSongs.map((track) => (
                     <img
-                      key={ track.trackId }
-                      src={ track.artworkUrl100 }
-                      alt={ track.trackName }
+                      key={track.trackId}
+                      src={track.artworkUrl100}
+                      alt={track.trackName}
                       className="img"
                     />
                   )))
@@ -49,10 +49,10 @@ export default class Favorites extends Component {
               </div>
               {favoriteSongs && favoriteSongs.map((track, index) => (
                 <MusicCard
-                  key={ track.trackId }
-                  trackInfo={ track }
-                  index={ index }
-                  handleSetFavoritesPage={ this.handleSetFavoritesPage }
+                  key={track.trackId}
+                  trackInfo={track}
+                  index={index}
+                  handleSetFavoritesPage={this.handleSetFavoritesPage}
                 />
               ))}
             </section>
