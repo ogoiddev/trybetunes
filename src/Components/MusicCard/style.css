@@ -1,0 +1,138 @@
+.cardTrack {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  max-width: 768px;
+  margin: 10px; 
+  box-shadow: 0 0 13px #dadada;
+  background: #fafafa;
+  padding: 0 15px;
+  border-radius: 13px;
+  z-index: 1;
+}
+
+.image-title {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 300px;
+}
+
+.img-favorites {
+  align-self: center;
+  border-radius: 30%;
+  height: 70%;
+} 
+
+.audio-and-check {
+  align-items: space-between;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  width: 468px;
+}
+
+
+.track-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-overflow: hidden;
+  margin: 0 15px;
+}
+
+.checkHeart {
+  align-items: center;
+  appearance: none;
+  content: url('../../images/chat-heart-fill.svg');
+  height: 70%;
+}
+
+.checkHeart:checked {
+  filter: hue-rotate(90deg);
+}
+
+.checkbox-label {
+  align-items: center;
+  color: transparent;
+  display: flex;
+  width: 40px;
+}
+
+.play {
+  align-self: center;
+  width: 100%;
+}
+
+.checkbox-loanding {
+  animation: 1.5s load linear;
+  border: 33px;
+  bottom: 30px;
+  box-shadow: 0 0 15px rgb(1, 37, 3);
+  color: black;
+  font-size: 1px;
+  height: 3px;
+  left: 33px;
+  position: absolute;
+  width: 23px;
+}
+
+@keyframes load {
+
+  0% {
+    transform: rotate(0);
+  }
+  
+  100% {
+    transform: rotate(1050deg);
+  }
+  
+}
+
+@media ( max-width : 768px ) {
+
+  .album-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardTrack {
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+    width: 90%;
+    margin-top: 60px;
+    transition: 1s ease-out;
+  }
+
+  .audio-and-check {
+    width: 100%;
+  }
+
+  .image-title {
+    width: 100%;
+  }
+
+  .track-title {
+    width: 100%;
+  }
+
+  .div-tracks {
+    width: 100%;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .img-favorites {
+    margin: 10px;
+  }
+
+  .login {
+    width: 100%;
+    margin: 30px 0 0;
+    padding: 15px;
+    transition: 1s ease-out;
+  }
+}

@@ -1,0 +1,12 @@
+.loading {
+  background: #fafafa;
+  color: #023031;
+  display: flex;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  height: 500px;
+  justify-content: center;
+  letter-spacing: 0.02em;
+  line-height: 65px;
+}

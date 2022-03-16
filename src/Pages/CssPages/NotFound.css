@@ -1,0 +1,28 @@
+.notfound {
+  align-items: center;
+  align-self: center;
+  background: #fafafa;
+  color: #023031;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.notfound--mesage {
+  height: fit-content;
+  margin: 60px;
+  text-align: center;
+}
+
+.notfound h1 {
+  font-size: 8rem;
+  height: fit-content;
+}
+
+.notfound p {
+  color: black;
+  font-size: 24px;
+  height: fit-content;
+}
