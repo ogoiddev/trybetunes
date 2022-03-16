@@ -29,6 +29,8 @@
   margin: 0 -60px;
   animation: lopp 8s linear infinite forwards;
   transition: 5s ease-out;
+  -webkit-transition:  5s ease-out;
+  -moz-transition:  5s ease-out;
   
 }
 
@@ -39,7 +41,7 @@
 }
 
 .img:nth-of-type(2), .img:nth-of-type(5) {
-animation: lopp 12s linear infinite forwards;
+  animation: lopp 12s linear infinite forwards;
   flex: 3;
 }
 
